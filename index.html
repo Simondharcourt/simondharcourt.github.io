@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experienced Software Engineer and AI researcher">
+    <!-- pour le partage:  -->
+    <meta property="og:title" content="Simon d'Harcourt - Resume">
+    <meta property="og:description" content="Experienced Software Engineer">
+    <meta property="og:image" content="og.png">
+
+    <link rel="stylesheet" href="../theo_resume/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway|Oswald">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Simon d'Harcourt - Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<style>
+    @media print {
+        html {
+            zoom: 63.25%; /* Adjust this for A4 print scaling */
+        }
+    }
+</style>
+
+
+
+
+
+<body class="bg-gray-100 dark:bg-real-gray-900 print:bg-white">
+    
+    <button id="top-button" onclick="window.scrollTo(0, 0);" style="border-radius: 70%"
+        class="hidden fixed right-7 bottom-7 z-50 text-3xl my-red text-gray-50 py-2 px-3 opacity-50 hover:opacity-100 shadow-sm print:hidden">
+        <i class="fas fa-arrow-up"></i></button>
+
+
+
+
+
+
+    <nav
+        class="flex flex-col md:flex-row justify-center w-full bg-white dark:bg-real-gray-700 dark:text-gray-50 shadow-2xl sticky top-0 z-40 text-sm print:hidden">
+        <div id="menu" class="text-right md:hidden text-2xl"><i class="fas fa-bars"></i></div>
+        <a href="#about">
+            <div class="active">ABOUT</div>
+        </a>
+        <a href="#work-experience-education" class="hidden md:block">
+            <div>WORK EXPERIENCE & EDUCATION</div>
+        </a>
+        <a href="#work-experience" class="md:hidden exclude">
+            <div>WORK EXPERIENCE</div>
+        </a>
+        <a href="#education" class="md:hidden exclude">
+            <div>EDUCATION</div>
+        </a>
+        <a href="#achievements-projects">
+            <div>RESEARCH & PROJECTS</div>
+        </a>
+        <a href="#skills-interests">
+            <div>SKILLS & KNOWLEDGE</div>
+        </a>
+        
+        <i class="fas fa-lightbulb ml-4 neon text-gray-500 dark:text-yellow-200 absolute top-5 md:relative"
+            style="cursor: pointer" onclick="$(document.documentElement).toggleClass('dark')"></i>
+
+        <i class="fas fa-print ml-4 absolute left-10 md:left-0 top-5 md:relative" style="cursor: pointer"
+            onclick="window.print()"></i>
+    </nav>
+
+
+
+
+
+
+
+
+    
+    <div class="container mx-auto relative lg:w-8/12 print:w-full print:min-w-full">
+
+
+
+
+        <div class="header-wrapper">
+            <header
+                class="grid bg-white dark:bg-real-gray-800 md:grid-cols-3 grid-cols-2 print:grid-cols-3 gap-x-4 shadow-xl relative header animate__animated">
+                <div class="ribbon down z-10 print:hidden">
+                    <div class="content">
+                            <a class="mx-1 text-right" target="_blank" href="https://www.linkedin.com/in/simon-dharcourt/"><span
+                                    class="hidden print:inline">
+                                    https://www.linkedin.com/in/simon-dharcourt/
+                                </span><i class="fab fa-linkedin"></i></a><br>
+                            <a class="mx-1 text-right" target="_blank" href="https://github.com/Simondharcourt"><span
+                                    class="hidden print:inline">
+                                    https://github.com/Simondharcourt
+                                </span><i class="fab fa-github"></i></a><br>
+                            <a class="mx-1 text-right" target="_blank" href="https://www.kaggle.com/simondharcourt"><span
+                                    class="hidden print:inline">
+                                    https://www.kaggle.com/simondharcourt
+                                </span><i class="fab fa-kaggle"></i></a><br>
+                    </div>
+                </div>
+                <div class="col-span-2 md:col-span-1 print:col-span-1 relative flex" id="about">
+                    <h1
+                        class="text-3xl md:text-6xl print:text-6xl absolute bottom-0 text-black-50 md:invisible print:invisible p-5 w-full leading-8 z-10 background-color: bg-white">
+                        Hi
+                        <i class="fas fa-handshake my-red-text"></i>,
+                        I'm <span class="font-semibold">
+                            Simon d'Harcourt
+                        </span><br><span class="text-lg">
+                            Machine Learning Engineer
+                        </span>
+                    </h1>
+                    <div class="md:max-h-80 print:max-h-60 overflow-hidden mx-auto print:flex print:justify-items-center print:items-center">
+                        <img class="md:max-w-none md:h-full print:max-w-none print:h-full" 
+                            src="img/profile.jpg" 
+                            onmouseover="this.src='img/smiling_profile.jpg';" 
+                            onmouseout="this.src='img/profile.jpg';" 
+                            onclick="window.location.href='https://www.linkedin.com/in/simon-dharcourt/';"
+                            style="cursor: pointer;" 
+                            alt="profile picture">
+                    </div>
+                    
+                    
+                    
+                </div>
+
+                
+                <div class="col-span-2 m-2">
+                    <h1 class="text-4xl hidden md:block print:block leading-6 md:pr-16 print:pr-16">Hello 
+                        <i class="fas fa-handshake my-red-text"></i>,
+                        I'm
+                        <span class="font-semibold">
+                            Simon
+                                d'Harcourt
+                        </span><br><span class="text-xl">
+                            Machine Learning Engineer
+                        </span>
+                    </h1>
+                    <hr class="mb-1 hidden md:block print:block">
+                    <div class="grid grid-cols-4 gap-4 print:gap-1 gap-x-10">
+                        
+                            
+                            <div class="font-bold">
+                                Age
+                            </div>
+                            
+                                        <div class="col-span-3 text-gray-700 dark:text-gray-300">
+                                            29 years
+                                        </div>
+                                        
+                                            
+                            
+                            <div class="font-bold">
+                                Languages
+                            </div>
+                            
+                                        <div class="col-span-3 text-gray-700 dark:text-gray-300">
+                                            French, English, Spanish
+                                        </div>
+                                        
+                                            
+                            
+                            <div class="font-bold">
+                                Location
+                            </div>
+                            
+                                        <div class="col-span-3 text-gray-700 dark:text-gray-300">
+                                            Paris, Flexible
+                                        </div>
+                                        
+                                            
+                            
+                            <div class="font-bold">
+                                Phone
+                            </div>
+                            
+                                        <div class="col-span-3 text-gray-700 dark:text-gray-300">
+                                            +33 6 77 84 27 92
+                                        </div>
+                                        
+                                            
+                            
+                            <div class="font-bold">
+                                E-mail
+                            </div>
+                            
+                                <div class="col-span-3 text-gray-700 dark:text-gray-300"><a
+                                        href="mailto:simondharcourt@gmail.com">
+                                        simondharcourt@gmail.com
+                                    </a></div>
+                               
+                                            
+                            
+                                <div class="font-bold hidden print:block">
+                                    CV Website
+                                </div>
+                                <div class="col-span-3 hidden print:block dark:text-gray-300 print:underline text-blue-600"><a target="_blank"
+                                        href="https://simon-dharcourt.github.io/resume/">
+                                        https://simon-dharcourt.github.io/resume/
+                                    </a></div>
+                                    
+                            
+                            <div class="font-bold">
+                                Interests
+                            </div>
+                            
+                                        <div class="col-span-3 text-gray-700 dark:text-gray-300">
+                                            AI, Math games, Street-workout, MMA and traveling in train
+                                        </div>
+                                        
+                                            
+                    </div>
+                </div>
+
+                <div
+                    class="description-block-wrapper text-black-50 col-span-full p-4 text-center text-xl print:text-md print:px-16">
+                    Experienced AI engineer and developer with over four years of experience.
+                </div>
+            </header>
+        </div>
+
+        <section class="px-2">
+            <div class="relative grid grid-cols-1 md:grid-cols-2 print:grid-cols-2" id="work-experience-education">
+                <div
+                    class="top-20 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto invisible md:visible print:visible">
+                </div>
+
+                <div class="col-span-1 relative">
+                    <div
+                        class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto  md:invisible print:invisible">
+                    </div>
+
+                    <h2 id="work-experience"><i class="fas fa-briefcase"></i> WORK EXPERIENCE</h2>
+
+
+
+
+                    <div class="job-block-wrapper experiences-block-wrapper">
+                        <div class="job-block relative animate__animated">
+                            
+                                <img class="absolute h-16 p-1.5" src="img/logo/affluences.png"
+                                    alt="Affluences logo.">
+                                
+                                    <span class="timeline-point-left"
+                                        style="--timeline-top: 50%"></span>
+                                    <div class="timeline-block-left">
+                                        <span class="arrow-left" style="--timeline-top: 50%"></span>
+                                        
+                                            
+                                                    <a class="absolute bottom-3.5" href="https://affluences.com/"
+                                                        target="_blank"><i
+                                                            class="fas fa-link opacity-50 hover:opacity-100"></i></a>
+                                                    
+                                                        
+                                                            <div class="date">
+                                                                Oct 2023 - Apr 2024
+                                                            </div>
+                                                            <h3>
+                                                                Affluences
+                                                            </h3>
+                                                            <p class="position">
+                                                                COMPUTER VISION ENGINEER • PARIS
+                                                            </p>
+                                                            <p class="text-lg whitespace-pre-line">
+                                                                 • Improvement and consolidation of computer vision algorithms.
+                                                                 • Evaluation and optimization of large-scale machine learning model performance.
+                                                                 • Resource optimization to ensure the software can be deployed on various hardware types.
+                                                                 • Experimentation with new methods to measure foot traffic in partner establishments.
+                                                            </p>
+                                                            <div class="badge-block">
+                                                                
+                                                                    <div class="has-tooltip">
+                                                                        <span class="tooltip">
+                                                                            React
+                                                                        </span>
+                                                                        <img alt=" "
+                                                                            src="img/ico/react.png">
+                                                                        </div>
+                                                                    </div>
+                                            </div>
+                                </div>
+                        </div>
+
+
+
+                        <div class="job-block-wrapper experiences-block-wrapper">
+                            <div class="job-block relative animate__animated">
+                                    <img class="absolute h-16 p-1.5" src="img/logo/old_milvue.png"
+                                        alt="Milvue logo.">
+                                        <span class="timeline-point-left"
+                                            style="--timeline-top: 50%"></span>
+                                        <div class="timeline-block-left">
+                                            <span class="arrow-left" style="--timeline-top: 50%"></span>
+                                                        <a class="absolute bottom-3.5" href="https://www.milvue.com/"
+                                                            target="_blank"><i
+                                                                class="fas fa-link opacity-50 hover:opacity-100"></i></a>                                                            
+                                                                <div class="date">
+                                                                    March 2023 - June 2023
+                                                                </div>
+                                                                <h3>
+                                                                    Milvue
+                                                                </h3>
+                                                                <p class="position">
+                                                                    SOFTWARE ENGINEER • PARIS
+                                                                </p>
+                                                                <p class="text-lg whitespace-pre-line">
+                                                                    Milvue is a company developing software to analyze medical images with AI.
+
+                                                                    Within the Software Engineering team, I contributed to the following missions:
+                                                                     • Tests development
+                                                                     • API development
+                                                                     • Data Engineering
+                                                                </p>
+                                                                <div class="badge-block">
+                                                                    
+                                                                        <div class="has-tooltip">
+                                                                            <span class="tooltip">
+                                                                                React
+                                                                            </span>
+                                                                            <img alt=" "
+                                                                                src="img/ico/react.png">
+                                                                        </div>
+                                                                </div>
+                                        </div>
+                            </div>
+                        </div>
+
+
+                        <div class="job-block-wrapper experiences-block-wrapper">
+                            <div class="job-block relative animate__animated">
+                                    <img class="absolute h-16 p-1.5" src="img/logo/old_citalid.jpg"
+                                        alt="Citalid logo.">
+                                        <span class="timeline-point-left"
+                                            style="--timeline-top: 50%"></span>
+                                        <div class="timeline-block-left">
+                                            <span class="arrow-left" style="--timeline-top: 50%"></span>
+                                                        <a class="absolute bottom-3.5" href="https://citalid.com/"
+                                                            target="_blank"><i
+                                                                class="fas fa-link opacity-50 hover:opacity-100"></i></a>                                                            
+                                                                <div class="date">
+                                                                    January 2021 - March 2023
+                                                                </div>
+                                                                <h3>
+                                                                    Citalid
+                                                                </h3>
+                                                                <p class="position">
+                                                                    DATA SCIENTIST • DEVELOPER • PARIS
+                                                                </p>
+                                                                <p class="text-lg whitespace-pre-line">
+                                                                    Citalid's mission is to predict companies' cyber exposure to major cyber actors and estimate their average annual financial loss due to cyber incidents, taking into account their security profile.
+                                                                    I started as the first data scientist in the startup, working with a team of 12 people. Two and a half years later, I left a company that had grown rapidly in both staff (45 people) and revenue.
+                                                                    
+                                                                    Missions:
+                                                                     • Developing the new Citalid's algorithms for risk estimation of the companies
+                                                                     • Data restructuration of Citalid's cyber threat intelligence
+                                                                     • Building tools for data acquisition, interpretation, and visualization
+                                                                     • Performance optimization of the backend server
+                                                                </p>
+                                                                <div class="badge-block">
+                                                                    
+                                                                        <div class="has-tooltip">
+                                                                            <span class="tooltip">
+                                                                                React
+                                                                            </span>
+                                                                            <img alt=" "
+                                                                                src="img/ico/react.png">
+                                                                        </div>
+                                                                </div>
+                                        </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="job-block-wrapper experiences-block-wrapper">
+                            <div class="job-block relative animate__animated">
+                                    <img class="absolute h-16 p-1.5" src="img/logo/lusis.png"
+                                        alt="Lusis logo.">
+                                        <span class="timeline-point-left"
+                                            style="--timeline-top: 50%"></span>
+                                        <div class="timeline-block-left">
+                                            <span class="arrow-left" style="--timeline-top: 50%"></span>
+                                                        <a class="absolute bottom-3.5" href="https://www.lusis.fr/"
+                                                            target="_blank"><i
+                                                                class="fas fa-link opacity-50 hover:opacity-100"></i></a>                                                            
+                                                                <div class="date">
+                                                                    April 2020 - Octobre 2020
+                                                                </div>
+                                                                <h3>
+                                                                    Lusis
+                                                                </h3>
+                                                                <p class="position">
+                                                                    RESEARCH ENGINEER • INTERNSHIP • PARIS
+                                                                </p>
+                                                                <p class="text-lg whitespace-pre-line">
+                                                                    A 6 month research internship aiming to develop a content-based music recommendation model for Qobuz, a company in musical streaming.
+                                                                    This fully autonomous work lead me to deepen my knowledge of recurrent variational autoencoders and signal classification, and enhance my ability to develop a production-ready model based on research papers.
+                                                                </p>
+                                                                <div class="badge-block">
+                                                                    
+                                                                    <div class="has-tooltip">
+                                                                        <span class="tooltip">
+                                                                            React
+                                                                        </span>
+                                                                        <img alt=" "
+                                                                            src="img/ico/react.png">
+                                                                    </div>
+                                                            </div>
+                                        </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class="col-span-1 relative">
+
+                    <div
+                        class="top-16 -bottom-2 my-red w-1 opacity-30 absolute inset-x-0 mx-auto md:invisible print:invisible">
+                    </div>
+
+
+                    
+                    <h2 id="skills-interests"><i class="fas fa-book"></i> SKILLS</h2>
+                    <div
+                        class="grid grid-cols-2 md:grid-cols-3 justify-items-center gap-4 justify-center place-items-center px-2 md:pl-10 print:pl-10 print:pr-0 md:pl-0 print:pl-0">
+                        
+                            <div class="skill-block-wrapper">
+                                <div class="skill-block animate__animated animate__slow">
+                                    <div class="skill-block-category text-center"><i class="fas fa-robot"></i>
+                                        Machine Learning
+                                    </div>
+                                    
+                                        <div class="text-center my-auto">
+                                            Pytorch, TensorFlow, Scikit-learn, OpenCV, Hugging Face
+                                        </div>
+                                        
+                                </div>
+                            </div>
+                            
+                            <div class="skill-block-wrapper">
+                                <div class="skill-block animate__animated animate__slow">
+                                    <div class="skill-block-category text-center"><i class="fas fa-code"></i>
+                                        Programming
+                                    </div>
+                                    
+                                        <div class="text-center my-auto">
+                                            Python/Django/Flask/FastAPI, Ruby/Rails, Dart/Flutter, Js/Ts/Web, C/C++
+                                        </div>
+                                        
+                                </div>
+                            </div>
+                            
+                            <div class="skill-block-wrapper">
+                                <div class="skill-block animate__animated animate__slow">
+                                    <div class="skill-block-category text-center"><i class="fas fa-database"></i>
+                                        Data Science
+                                    </div>
+                                    
+                                        <div class="text-center my-auto">
+                                            Big Query, Pandas, Plotly, Matplotlib, Google Data Studio
+                                        </div>
+                                        
+                                </div>
+                            </div>
+                            
+                            <!-- <div class="skill-block-wrapper">
+                                <div class="skill-block animate__animated animate__slow">
+                                    <div class="skill-block-category text-center"><i class="fas fa-globe"></i>
+                                        Application Framework
+                                    </div>
+                                    
+                                        <div class="text-center my-auto">
+                                            Flutter, Android, iOS, Web, React, Tailwind
+                                        </div>
+                                        
+                                </div>
+                            </div> -->
+<!--                             
+                            <div class="skill-block-wrapper">
+                                <div class="skill-block animate__animated animate__slow">
+                                    <div class="skill-block-category text-center"><i class="fas fa-robot"></i>
+                                        Robotics
+                                    </div>
+                                    
+                                        <div class="text-center my-auto">
+                                            RbPi/Jetson, Soldering, ROS, PyBullet, Gazebo, Orb-Slam
+                                        </div>
+                                        
+                                </div>
+                            </div> -->
+                            
+                            <!-- <div class="skill-block-wrapper">
+                                <div class="skill-block animate__animated animate__slow">
+                                    <div class="skill-block-category text-center"><i class="fas fa-balance-scale"></i>
+                                        Soft Skills
+                                    </div>
+                                    
+                                        <div class="text-center my-auto">
+                                            Adaptability, Creativity, Problem-Solving, Attention to Detail, Team Spirit
+                                        </div>
+                                        
+                                </div>
+                            </div> -->
+                            
+                    </div>
+
+
+
+
+                    <h2 id="education"><i class="fas fa-user-graduate"></i> EDUCATION</h2>
+
+
+
+                    <div class="education-block-wrapper nopagebreak">
+                        <div class="education-block relative animate__animated">
+                            <span class="timeline-point-right"
+                                style="--timeline-top: 50%"></span>
+                            <div class="timeline-block-right">
+                                <span class="arrow-right" style="--timeline-top: 50%"></span>
+                                <div class="date-edu">
+                                    2016 - 2020
+                                </div>
+                                
+                                    <img class="object-scale-down w-32 p-1.5 right-0 mx-auto mt-3 mb-3"
+                                        src="img/logo/centralesupelec.png" alt=" logo">
+                                    
+                                        <h3>
+                                            Generalist Engineering
+                                        </h3>
+                                        <p class="position">
+                                            CENTRALESUPELEC - PARIS
+                                        </p>
+                                        <p class="text-center">
+                                            Top tier generalist ESchool
+                                        </p>
+                                        
+                                            <div
+                                                class="badge-text-block flex flex-wrap text-white gap-1 justify-center mt-2">
+                                                
+                                                    <div class="p-1 my-red text-xs rounded-md">
+                                                        Functional Programing
+                                                    </div>
+                                                    
+                                                    <div class="p-1 my-red text-xs rounded-md">
+                                                        OOP
+                                                    </div>
+                                                    
+                                                    <div class="p-1 my-red text-xs rounded-md">
+                                                        Compiler Theory
+                                                    </div>
+                                                    
+                                                    <div class="p-1 my-red text-xs rounded-md">
+                                                        Quantum Computing
+                                                    </div>
+                                                    
+                                                    <div class="p-1 my-red text-xs rounded-md">
+                                                        Numerical Methods
+                                                    </div>
+                                                    
+                                                    <div class="p-1 my-red text-xs rounded-md">
+                                                        OS Programming
+                                                    </div>
+                                                    
+                                                    <div class="p-1 my-red text-xs rounded-md">
+                                                        Computability Theory
+                                                    </div>
+                                                    
+                                                    <div class="p-1 my-red text-xs rounded-md">
+                                                        Robotics
+                                                    </div>
+                                                    
+                                                    <div class="p-1 my-red text-xs rounded-md">
+                                                        Machine Learning
+                                                    </div>
+                                                    
+                                            </div>
+                                            
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+                        <div class="education-block-wrapper nopagebreak">
+                            <div class="education-block relative animate__animated">
+                                <span class="timeline-point-right"
+                                    style="--timeline-top: 50%"></span>
+                                <div class="timeline-block-right">
+                                    <span class="arrow-right" style="--timeline-top: 50%"></span>
+                                    <div class="date-edu">
+                                        2013 - 2016
+                                    </div>
+                                    
+                                        <img class="object-scale-down h-16 p-1.5 right-0 mx-auto mt-3 mb-3"
+                                            src="img/logo/stanislas_old.jpg" alt=" logo">
+                                        
+                                            <h3>
+                                                Preparatory Class
+                                            </h3>
+                                            <p class="position">
+                                                STANISLAS - PARIS
+                                            </p>
+                                            <p class="text-justify">
+                                                High-intensity study of Mathematics and Physics to prepare for the entry into french engineering schools.
+                                            </p>
+                                            
+                                                <div
+                                                    class="badge-text-block flex flex-wrap text-white gap-1 justify-center mt-2">
+                                                    
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Logic
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Algebra
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Differential Calculus
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Group Theory
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Numerical Sequences
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Polynomials
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Linear Algebra
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Reduction of Endomorphisms
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Thermodynamics
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Classical Mechanics
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Electrostatics and Magnetic Fields
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Electric Circuits
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Mecanical Waves
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Fluid Mecanics
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Wave Optics
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Diffusion
+                                                        </div>
+                                                        
+                                                        <div class="p-1 my-red text-xs rounded-md">
+                                                            Quantum Physics
+                                                        </div>
+                                                        
+                                                </div>
+                                                
+                                </div>
+                            </div>
+                        </div>
+                        
+
+
+
+                        <div class="education-block-wrapper nopagebreak">
+                            <div class="education-block relative animate__animated">
+                                <span class="timeline-point-right"
+                                    style="--timeline-top: 50%"></span>
+                                <div class="timeline-block-right">
+                                    <span class="arrow-right" style="--timeline-top: 50%"></span>
+                                    <div class="date-edu">
+                                        2020
+                                    </div>
+                                    
+                                        <img class="object-scale-down h-16 p-1.5 right-0 mx-auto mt-3 mb-3"
+                                            src="img/logo/wagon.png" alt=" logo">
+                                        
+                                            <h3>
+                                                WEB DEVELOPMENT BOOTCAMP
+                                            </h3>
+                                            <p class="position">
+                                                LE WAGON - MONTREAL
+                                            </p>
+                                            <p class="text-center">
+                                                9-weeks bootcamp to get started with web developement
+                                            </p>
+                                            <div class="badge-text-block flex flex-wrap text-white gap-1 justify-center mt-2">
+                                                <div class="p-1 my-red text-xs rounded-md">
+                                                    HTML & CSS
+                                                </div>
+                                                
+                                                <div class="p-1 my-red text-xs rounded-md">
+                                                    JavaScript
+                                                </div>
+                                                
+                                                <div class="p-1 my-red text-xs rounded-md">
+                                                    Ruby on Rails
+                                                </div>
+                                                
+                                                <div class="p-1 my-red text-xs rounded-md">
+                                                    SQL & Databases
+                                                </div>
+                                                
+                                                <div class="p-1 my-red text-xs rounded-md">
+                                                    APIs
+                                                </div>
+                                                
+                                                <div class="p-1 my-red text-xs rounded-md">
+                                                    Git & GitHub
+                                                </div>
+                                                
+                                                <div class="p-1 my-red text-xs rounded-md">
+                                                    Responsive Design
+                                                </div>
+                                                
+                                                <div class="p-1 my-red text-xs rounded-md">
+                                                    UX/UI Design Principles
+                                                </div>
+                                                
+                                                <div class="p-1 my-red text-xs rounded-md">
+                                                    Deployment
+                                                </div>
+                                            </div>
+                                            
+                                </div>
+                            </div>
+
+
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    
+
+
+
+
+        <!-- <div class="pagebreak"> </div> -->
+        <div class="my-10"></div>
+        <h2 id="achievements-projects"><i class="fas fa-trophy"></i> RESEARCH & PROJECTS</h2>
+        <section class="flex flex-wrap gap-x-6 px-2">
+
+
+            <div class="relative project-block-wrapper self-center" style="flex: 1 0 270px;">
+                <div class="timeline-block project-block animate__animated">
+                    
+                        
+                                <a class="absolute" href="https://www.linkedin.com/feed/update/urn:li:activity:7203445304459755521/" target="_blank"><i
+                                        class="fas fa-link opacity-50 hover:opacity-100"></i></a>
+                                
+                                    
+                                        <div class="date">
+                                            2024
+                                        </div>
+                                        <h3>
+                                            SHIFT AI HACKATHON
+                                        </h3>
+                                        <p class="position">
+                                            PARTICIPANT
+                                        </p>
+                                        <p class="text-justify">
+                                            GenAI Hackathon, where me and my team won the public prize.
+                                            <!-- <div class="badge-block">
+                                            
+                                                <div class="has-tooltip">
+                                                    <span class="tooltip">
+                                                        Mistral AI
+                                                    </span>
+                                                    <img alt="Mistral AI logo" src="img/ico/mistral.png">
+                                                </div>
+                                            
+                                                
+                                                <div class="has-tooltip">
+                                                    <span class="tooltip">
+                                                        Pytorch
+                                                    </span>
+                                                    <img alt="Pytorch logo" src="img/ico/pytorch.png">
+                                                </div>
+                                                
+                                                <div class="has-tooltip">
+                                                    <span class="tooltip">
+                                                        Python
+                                                    </span>
+                                                    <img alt="Python logo" src="img/ico/python.png">
+                                                </div>
+                                                
+                                        </div> -->
+                </div>
+            </div>
+
+
+
+            <div class="relative project-block-wrapper self-center" style="flex: 1 0 270px;">
+                <div class="timeline-block project-block animate__animated">
+                    
+                        
+                                <a class="absolute" href="https://www.linkedin.com/feed/update/urn:li:activity:7201285691543089153/" target="_blank"><i
+                                        class="fas fa-link opacity-50 hover:opacity-100"></i></a>
+                                
+                                    
+                                        <div class="date">
+                                            2024
+                                        </div>
+                                        <h3>
+                                            LLM Hackaton X Mistral
+                                        </h3>
+                                        <p class="position">
+                                            PARTICIPANT
+                                        </p>
+                                        <p class="text-justify">
+                                            Selected to participate in a Mistral Hackathon, where an innovative solution using large language models (LLMs) was developed.
+                                        <!-- <div class="badge-block">
+                                            
+                                                <div class="has-tooltip">
+                                                    <span class="tooltip">
+                                                        Mistral AI
+                                                    </span>
+                                                    <img alt="Mistral AI logo" src="img/ico/mistral.png">
+                                                </div>
+                                            
+                                                
+                                                <div class="has-tooltip">
+                                                    <span class="tooltip">
+                                                        Pytorch
+                                                    </span>
+                                                    <img alt="Pytorch logo" src="img/ico/pytorch.png">
+                                                </div>
+                                                
+                                                <div class="has-tooltip">
+                                                    <span class="tooltip">
+                                                        Python
+                                                    </span>
+                                                    <img alt="Python logo" src="img/ico/python.png">
+                                                </div>
+                                                
+                                        </div>
+                </div> -->
+            </div>
+
+        </section>
+    </div>
+
+
+
+
+
+    <div class="my-5"></div>
+    <div class="hidden print:block text-center pt-4">
+        A online version of this resume is also available, with updates as they occur, and links to the different
+        projects, on <a class="my-red-text"
+            href="https://simon-dharcourt.github.io/resume/">https://simon-dharcourt.github.io/resume/</a>.
+        <br>
+        <img class="p-4 w-2/12 mx-auto" src="img/qrcode.png" alt="QR-code of the online resume.">
+    </div>
+    <footer class="p-14 my-red text-gray-50 print:hidden text-center">
+        <br>
+        © 2024 Simon d'Harcourt
+
+
+
+
+
+    </footer>
+    <script>
+        // Code from https://stackoverflow.com/questions/10599933/convert-long-number-into-abbreviated-string-in-javascript-with-a-special-shortn
+        function abbreviateNumber(value) {
+            var newValue = value;
+            if (value >= 1000) {
+                var suffixes = ["", "k", "m", "b", "t"];
+                var suffixNum = Math.floor(("" + value).length / 3);
+                var shortValue = '';
+                for (var precision = 2; precision >= 1; precision--) {
+                    shortValue = parseFloat((suffixNum != 0 ? (value / Math.pow(1000, suffixNum)) : value).toPrecision(precision));
+                    var dotLessShortValue = (shortValue + '').replace(/[^a-zA-Z 0-9]+/g, '');
+                    if (dotLessShortValue.length <= 2) { break; }
+                }
+                if (shortValue % 1 != 0) shortValue = shortValue.toFixed(1);
+                newValue = shortValue + suffixes[suffixNum];
+            }
+            return newValue;
+        }
+
+        document.querySelectorAll(".github-link").forEach(a => {
+            const [usr, repo] = a.href.split("/").slice(-2);
+            fetch(`https://api.github.com/repos/${usr}/${repo}?page=10&per_page=100`).then((response) => {
+                response.json().then((json) => {
+                    document.getElementById(a.id.replace("a-", "star-")).innerHTML = json.stargazers_count > 0 ? `${abbreviateNumber(json.stargazers_count)} <i
+                                        class="fas fa-star text-xs text-yellow-400"></i>` : "";
+                })
+
+            })
+        });
+
+
+
+    function toggleDarkMode() {
+        document.documentElement.classList.toggle('dark');
+    }
+    </script>
+
+
+
+
+<!-- <img src="img/profile.png" onmouseover="this.src='img/profile-smile.gif';" onmouseout="this.src='img/profile.png';"> -->
+
